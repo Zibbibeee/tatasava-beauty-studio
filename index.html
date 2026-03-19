@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatasava Beauty Studio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/LOGO.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/LOGO.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="pictures/LOGO.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="pictures/LOGO.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="pictures/LOGO.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="pictures/LOGO.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Clean Simple Header -->
+    <header class="site-header">
+        <div class="header-wrap">
+            <!-- Logo -->
+            <a href="#" class="site-logo">
+                <img src="pictures/LOGO.png" alt="Beauty Studio">
+            </a>
+
+            <!-- Navigation -->
+            <nav class="site-nav">
+                <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+                <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#gallery" class="nav-link" data-i18n="nav.gallery">Gallery</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+            </nav>
+
+            <!-- Right Section -->
+            <div class="header-right">
+                <!-- Simple Language Buttons -->
+                <div class="lang-buttons">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="uk">UK</button>
+                </div>
+
+                <!-- Book Button -->
+                <a href="#contact" class="btn-book" data-i18n="nav.book">Book Now</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-nav">
+            <a href="#home" class="mobile-link" data-i18n="nav.home">Home</a>
+            <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
+            <a href="#pricing" class="mobile-link" data-i18n="nav.pricing">Pricing</a>
+            <a href="#about" class="mobile-link" data-i18n="nav.about">About</a>
+            <a href="#gallery" class="mobile-link" data-i18n="nav.gallery">Gallery</a>
+            <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
+            <div class="mobile-lang">
+                <button class="mobile-lang-btn active" data-lang="en">🇬🇧 EN</button>
+                <button class="mobile-lang-btn" data-lang="fr">🇫🇷 FR</button>
+                <button class="mobile-lang-btn" data-lang="uk">🇺🇦 UK</button>
+            </div>
+            <a href="#contact" class="mobile-book" data-i18n="nav.book">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-blob blob-1"></div>
+            <div class="hero-blob blob-2"></div>
+            <div class="hero-blob blob-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle fade-in-up" data-i18n="hero.welcome">Welcome to</p>
+            <h1 class="hero-title fade-in-up delay-1" data-i18n="hero.title">Tatasava Beauty Studio</h1>
+            <p class="hero-description fade-in-up delay-2" data-i18n="hero.description">
+                Where elegance meets artistry. Discover your true beauty with our premium services.
+            </p>
+            <div class="hero-buttons fade-in-up delay-3">
+                <a href="#services" class="btn btn-primary" data-i18n="hero.cta1">Explore Services</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero.cta2">Book Now</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="services.tag">Our Services</span>
+                <h2 class="section-title" data-i18n="services.title">Premium Beauty Services</h2>
+                <p class="section-subtitle" data-i18n="services.subtitle">Experience luxury treatments tailored to enhance your natural beauty</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-delay="0">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.facial.title">Facial Treatments</h3>
+                    <p class="service-description" data-i18n="services.facial.desc">Rejuvenating facials using premium products for radiant, glowing skin.</p>
+                    <a href="#contact" class="service-link" data-i18n="services.learnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-delay="100">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 12V8h-4V4h-4v4H8v4H4v4h4v4h4v-4h4v-4h4z"/>
+                            <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.hair.title">Hair Styling</h3>
+                    <p class="service-description" data-i18n="services.hair.desc">From cuts to colors, create your perfect look with our expert stylists.</p>
+                    <a href="#contact" class="service-link" data-i18n="services.learnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-delay="200">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.makeup.title">Makeup Artistry</h3>
+                    <p class="service-description" data-i18n="services.makeup.desc">Professional makeup for any occasion, from natural to glamorous.</p>
+                    <a href="#contact" class="service-link" data-i18n="services.learnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-delay="300">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.nails.title">Nail Care</h3>
+                    <p class="service-description" data-i18n="services.nails.desc">Manicures, pedicures, and nail art for perfectly polished hands and feet.</p>
+                    <a href="#contact" class="service-link" data-i18n="services.learnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-delay="400" style="display: none;">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.spa.title">Spa Treatments</h3>
+                    <p class="service-description" data-i18n="services.spa.desc">Relaxing massages and body treatments for total rejuvenation.</p>
+                    <a href="#contact" class="service-link" data-i18n="services.learnMore">Learn More →</a>
+                </div>
+                <div class="service-card" data-delay="500">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 6L9 17l-5-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.waxing.title">Waxing & Threading</h3>
+                    <p class="service-description" data-i18n="services.waxing.desc">Smooth, precise hair removal for long-lasting results.</p>
+                    <a href="#contact" class="service-link" data-i18n="services.learnMore">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-image main-image">
+                        <div class="image-placeholder">
+                            <span>✦</span>
+                        </div>
+                    </div>
+                    <div class="about-image secondary-image">
+                        <div class="image-placeholder">
+                            <span>✧</span>
+                        </div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="badge-number">10+</span>
+                        <span class="badge-text" data-i18n="about.years">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag" data-i18n="about.tag">About Us</span>
+                    <h2 class="section-title" data-i18n="about.title">Crafting Beauty Since 2014</h2>
+                    <p class="about-text" data-i18n="about.text1">
+                        At Tatasava Beauty Studio, we believe that beauty is an art form. Our team of skilled professionals is dedicated to helping you look and feel your absolute best. With over a decade of experience, we've perfected the art of enhancing natural beauty.
+                    </p>
+                    <p class="about-text" data-i18n="about.text2">
+                        We use only premium, cruelty-free products and stay current with the latest techniques and trends. Every visit is a personalized experience designed around your unique needs and desires.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span data-i18n="about.feature1">Certified Professionals</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span data-i18n="about.feature2">Premium Products</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span data-i18n="about.feature3">Relaxing Atmosphere</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" data-i18n="about.cta">Book an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="pricing.tag">Our Pricing</span>
+                <h2 class="section-title" data-i18n="pricing.title">Permanent Makeup Price List</h2>
+                <p class="section-subtitle" data-i18n="pricing.subtitle">Premium quality services at competitive prices</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Powder Brows -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-i18n="pricing.powderBrows.title">Powder Brows</h3>
+                        <div class="pricing-icon">✦</div>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.initialSession">Initial Session</span>
+                            <span class="price-value">$299</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.perfectingSession">Perfecting Session (6-8 weeks)</span>
+                            <span class="price-value">$175</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.prepaidBoth">Prepaid for both sessions</span>
+                            <span class="price-value">10% off</span>
+                        </div>
+                        <div class="price-item yearly">
+                            <span class="price-name" data-i18n="pricing.yearlyBoost">Yearly Colour Boost</span>
+                            <span class="price-value">$250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nano Stroke Brows -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-i18n="pricing.popular">Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-i18n="pricing.nanoBrows.title">Nano Stroke Brows</h3>
+                        <div class="pricing-icon">✧</div>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.initialSession">Initial Session</span>
+                            <span class="price-value">$499</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.perfectingSession">Perfecting Session (6-8 weeks)</span>
+                            <span class="price-value">$299</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.prepaidBoth">Prepaid for both sessions</span>
+                            <span class="price-value">10% off</span>
+                        </div>
+                        <div class="price-item yearly">
+                            <span class="price-name" data-i18n="pricing.yearlyBoost">Yearly Colour Boost</span>
+                            <span class="price-value">$350</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combination Brows -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-i18n="pricing.comboBrows.title">Combination Brows</h3>
+                        <span class="pricing-subtitle" data-i18n="pricing.comboSubtitle">(Powder + Nano Strokes)</span>
+                        <div class="pricing-icon">✦</div>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.initialSession">Initial Session</span>
+                            <span class="price-value">$550</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.perfectingSession">Perfecting Session (6-8 weeks)</span>
+                            <span class="price-value">$350</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.prepaidBoth">Prepaid for both sessions</span>
+                            <span class="price-value">10% off</span>
+                        </div>
+                        <div class="price-item yearly">
+                            <span class="price-name" data-i18n="pricing.yearlyBoost">Yearly Colour Boost</span>
+                            <span class="price-value">$399</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eyeliner Tattoo -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-i18n="pricing.eyeliner.title">Eyeliner Tattoo</h3>
+                        <div class="pricing-icon">✦</div>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.nanoLash">Nano Lash Line</span>
+                            <span class="price-value">$250</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.classicWinged">Classic or Winged Eyeliner</span>
+                            <span class="price-value">$350</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.perfectingSession">Perfecting Session (6-8 weeks)</span>
+                            <span class="price-value">$190</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.prepaidBoth">Prepaid for both sessions</span>
+                            <span class="price-value">10% off</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lip Neutralisation -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-i18n="pricing.lipNeutral.title">Lip Neutralisation</h3>
+                        <div class="pricing-icon">✧</div>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.initialSession">Initial Session</span>
+                            <span class="price-value">$499</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.perfecting8weeks">Perfecting Session (8 weeks)</span>
+                            <span class="price-value">$299</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.additionalSessions">Additional Sessions (if required)</span>
+                            <span class="price-value">$250</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.prepaidBoth">Prepaid for both sessions</span>
+                            <span class="price-value">10% off</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lip Blush -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title" data-i18n="pricing.lipBlush.title">Lip Blush</h3>
+                        <div class="pricing-icon">✦</div>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.initialSession">Initial Session</span>
+                            <span class="price-value">$450</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.perfectingSession">Perfecting Session (6-8 weeks)</span>
+                            <span class="price-value">$250</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name" data-i18n="pricing.prepaidBoth">Prepaid for both sessions</span>
+                            <span class="price-value">10% off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <p data-i18n="pricing.note">* All prices are in CAD. A 10% discount applies when booking both initial and perfecting sessions together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="gallery.tag">Portfolio</span>
+                <h2 class="section-title" data-i18n="gallery.title">Our Work</h2>
+                <p class="section-subtitle" data-i18n="gallery.subtitle">See the transformations we've created for our clients</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Portfolio Images -->
+                <div class="gallery-item" data-category="portfolio">
+                    <img src="pictures/portfolio_picture.jpg" alt="Portfolio" class="gallery-image" onclick="openLightbox(this.src, this.alt)">
+                    <div class="gallery-overlay" onclick="openLightbox('pictures/portfolio_picture.jpg', 'Portfolio')">
+                        <span class="gallery-category">Portfolio</span>
+                        <h4 class="gallery-title">Portfolio</h4>
+                        <span class="gallery-zoom">🔍 Click to enlarge</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="lashes">
+                    <img src="pictures/Lashes_portfolio.jpg" alt="Lashes" class="gallery-image" onclick="openLightbox(this.src, this.alt)">
+                    <div class="gallery-overlay" onclick="openLightbox('pictures/Lashes_portfolio.jpg', 'Lashes Portfolio')">
+                        <span class="gallery-category">Lashes</span>
+                        <h4 class="gallery-title">Lashes Portfolio</h4>
+                        <span class="gallery-zoom">🔍 Click to enlarge</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="lips">
+                    <img src="pictures/lips_portfolio.jpg" alt="Lips" class="gallery-image" onclick="openLightbox(this.src, this.alt)">
+                    <div class="gallery-overlay" onclick="openLightbox('pictures/lips_portfolio.jpg', 'Lips Portfolio')">
+                        <span class="gallery-category">Lips</span>
+                        <h4 class="gallery-title">Lips Portfolio</h4>
+                        <span class="gallery-zoom">🔍 Click to enlarge</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nails">
+                    <img src="pictures/nails_portfolio.jpg" alt="Nails" class="gallery-image" onclick="openLightbox(this.src, this.alt)">
+                    <div class="gallery-overlay" onclick="openLightbox('pictures/nails_portfolio.jpg', 'Nails Portfolio')">
+                        <span class="gallery-category">Nails</span>
+                        <h4 class="gallery-title">Nails Portfolio</h4>
+                        <span class="gallery-zoom">🔍 Click to enlarge</span>
+                    </div>
+                </div>
+                <!-- New Nail Portfolio Images -->
+                <div class="gallery-item" data-category="nails">
+                    <img src="pictures/portfolio_nails1.jpg" alt="Nail Design 1" class="gallery-image" onclick="openLightbox(this.src, this.alt)">
+                    <div class="gallery-overlay" onclick="openLightbox('pictures/portfolio_nails1.jpg', 'Nail Design 1')">
+                        <span class="gallery-category">Nails</span>
+                        <h4 class="gallery-title">Nail Design 1</h4>
+                        <span class="gallery-zoom">🔍 Click to enlarge</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nails">
+                    <img src="pictures/portfolio_nails2.jpg" alt="Nail Design 2" class="gallery-image" onclick="openLightbox(this.src, this.alt)">
+                    <div class="gallery-overlay" onclick="openLightbox('pictures/portfolio_nails2.jpg', 'Nail Design 2')">
+                        <span class="gallery-category">Nails</span>
+                        <h4 class="gallery-title">Nail Design 2</h4>
+                        <span class="gallery-zoom">🔍 Click to enlarge</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nails">
+                    <img src="pictures/portfolio_nails3.jpg" alt="Nail Design 3" class="gallery-image" onclick="openLightbox(this.src, this.alt)">
+                    <div class="gallery-overlay" onclick="openLightbox('pictures/portfolio_nails3.jpg', 'Nail Design 3')">
+                        <span class="gallery-category">Nails</span>
+                        <h4 class="gallery-title">Nail Design 3</h4>
+                        <span class="gallery-zoom">🔍 Click to enlarge</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nails">
+                    <img src="pictures/portfolio_nails4.jpg" alt="Nail Design 4" class="gallery-image" onclick="openLightbox(this.src, this.alt)">
+                    <div class="gallery-overlay" onclick="openLightbox('pictures/portfolio_nails4.jpg', 'Nail Design 4')">
+                        <span class="gallery-category">Nails</span>
+                        <h4 class="gallery-title">Nail Design 4</h4>
+                        <span class="gallery-zoom">🔍 Click to enlarge</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="testimonials.tag">Testimonials</span>
+                <h2 class="section-title" data-i18n="testimonials.title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The best beauty studio I've ever been to! The staff is incredibly skilled and the atmosphere is so relaxing. My hair has never looked better!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Mitchell</span>
+                            <span class="author-role">Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"I had my bridal makeup done here and it was absolutely perfect. They understood exactly what I wanted and made me feel like a princess."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">E</div>
+                        <div class="author-info">
+                            <span class="author-name">Emma Thompson</span>
+                            <span class="author-role">Bride</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The facial treatments here are transformative. My skin has never been clearer or more radiant. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <span class="author-name">Jennifer Lee</span>
+                            <span class="author-role">Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag" data-i18n="contact.tag">Get in Touch</span>
+                    <h2 class="section-title" data-i18n="contact.title">Visit Us Today</h2>
+                    <p class="contact-description" data-i18n="contact.description">Ready to transform your look? Book an appointment or visit our studio for a consultation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-i18n="contact.location">Location</span>
+                                <span class="contact-value">4 Rue Taschereau local 535, Gatineau, Quebec J8Y 3X5</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-i18n="contact.phone">Phone</span>
+                                <span class="contact-value">+1 873 354 8078</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">tatasava05@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-i18n="contact.hours">Hours</span>
+                                <span class="contact-value">Mon-Sat: 9AM - 7PM | Sun: 10AM - 5PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="https://formspree.io/f/xpqykgol" method="POST" id="booking-form">
+                        <input type="hidden" name="_subject" value="New Booking Request - Tatasava Beauty Studio">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_replyto" id="replyto-field">
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name" data-i18n-placeholder="form.name" required>
+                            <label for="name" data-i18n="form.nameLabel">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email" data-i18n-placeholder="form.email" required>
+                            <label for="email" data-i18n="form.emailLabel">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="phone" placeholder="Your Phone" data-i18n-placeholder="form.phone" required>
+                            <label for="phone" data-i18n="form.phoneLabel">Your Phone</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" name="date" id="date" required>
+                            <label for="date" data-i18n="form.dateLabel">Preferred Date</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" name="time" id="time" required>
+                            <label for="time" data-i18n="form.timeLabel">Preferred Time</label>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" id="service" required>
+                                <option value="" data-i18n="form.selectService">Select a Service</option>
+                                <option value="facial" data-i18n="services.facial.title">Facial Treatment</option>
+                                <option value="hair" data-i18n="services.hair.title">Hair Styling</option>
+                                <option value="makeup" data-i18n="services.makeup.title">Makeup Artistry</option>
+                                <option value="nails" data-i18n="services.nails.title">Nail Care</option>
+                                <option value="spa" data-i18n="services.spa.title">Spa Treatment</option>
+                                <option value="waxing" data-i18n="services.waxing.title">Waxing & Threading</option>
+                            </select>
+                            <label for="service" data-i18n="form.serviceLabel">Select a Service</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="3" placeholder="Additional notes or special requests..." data-i18n-placeholder="form.message"></textarea>
+                            <label for="message" data-i18n="form.messageLabel">Additional Notes</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-i18n="form.submit">
+                            <span>Book Appointment</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-6.5 20L11 13 1 9l21-7z"/>
+                            </svg>
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="pictures/LOGO.png" alt="Tatasava Beauty Studio" class="logo-image">
+                    </a>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Where beauty becomes art</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/tatasava05?igsh=aDF0MXZsZDhsYWRr&utm_source=qr" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/tetiana.savushkina.zolotuhina/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title" data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                        <li><a href="#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title" data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="#services" data-i18n="services.facial.title">Facial Treatments</a></li>
+                        <li><a href="#services" data-i18n="services.hair.title">Hair Styling</a></li>
+                        <li><a href="#services" data-i18n="services.makeup.title">Makeup Artistry</a></li>
+                        <li><a href="#services" data-i18n="services.nails.title">Nail Care</a></li>
+                        <li><a href="#services" data-i18n="services.spa.title">Spa Treatments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-title" data-i18n="footer.newsletter">Stay Updated</h4>
+                    <p data-i18n="footer.newsletterText">Subscribe to our newsletter for beauty tips and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" data-i18n-placeholder="footer.emailPlaceholder">
+                        <button type="submit" data-i18n="footer.subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2024 Tatasava Beauty Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
